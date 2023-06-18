@@ -3,7 +3,7 @@
 
 
 <div align="center"><p>The website for Klee, the cutest genius Genshin character out there!</p>
-<p>献给原神最可爱的天才可莉酱</p></div>
+<p>献给绮良良</p></div>
 
 # 可莉哒哒哒| クレーだだだ | Klee Dadada 
 
