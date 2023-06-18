@@ -79,24 +79,20 @@ const LANGUAGES = {
     "cn": {
         audioList: [
             //0-10：默认模式 mode1
-            "audio/CN_voice/1687006548612_01_08.mp3",
-            "audio/CN_voice/1687006548612_01_07.mp3",
-            "audio/CN_voice/1687006548612_01_06.mp3",
-            "audio/CN_voice/1687006548612_01_05.mp3",
-            "audio/CN_voice/1687006548612_01_04.mp3",
-            "audio/CN_voice/1687006548612_01_03.mp3",
-            "audio/CN_voice/1687006548612_01_02.mp3",
-            "audio/CN_voice/1687006548612_01_01.mp3",
+
             "audio/CN_voice/auv1n-zt6n9_03.mp3",
             "audio/CN_voice/auv1n-zt6n9_02.mp3",
             "audio/CN_voice/auv1n-zt6n9_01.mp3",
+            "audio/CN_voice/auv1n-zt6n9_04.mp3",
+            "audio/CN_voice/auv1n-zt6n9_05.mp3",
+            "audio/CN_voice/auv1n-zt6n9_06.mp3",
             //11-16：彩蛋模式 mode3
-            "audio/General/Egg_LZKBomb_General.mp3",
-            "audio/General/Egg_LZKDadada_General .mp3",
-            "audio/General/Egg_LZKHei_General.mp3",
-            "audio/General/Egg_HLbomb_General.mp3",
-            "audio/General/Egg_HLlalala_General.mp3",
-            "audio/General/Egg_HLdadada_General.mp3"
+            "audio/General/auv1n-zt6n9_03.mp3",
+            "audio/General/auv1n-zt6n9_02.mp3",
+            "audio/General/auv1n-zt6n9_01.mp3",
+            "audio/General/auv1n-zt6n9_04.mp3",
+            "audio/General/auv1n-zt6n9_05.mp3",
+            "audio/General/auv1n-zt6n9_06.mp3"
         ],
         texts: {
             "page-title": "绮良良 喵~",
@@ -132,12 +128,12 @@ const LANGUAGES = {
             "audio/JP_voice/Wunia_JP.mp3",
             "audio/JP_voice/ChildlabourWuuu_JP.mp3",
             //11-16：彩蛋模式 mode3
-            "audio/General/Egg_LZKBomb_General.mp3",
-            "audio/General/Egg_LZKDadada_General .mp3",
-            "audio/General/Egg_LZKHei_General.mp3",
-            "audio/General/Egg_HLbomb_General.mp3",
-            "audio/General/Egg_HLlalala_General.mp3",
-            "audio/General/Egg_HLdadada_General.mp3"
+            "audio/General/auv1n-zt6n9_03.mp3",
+            "audio/General/auv1n-zt6n9_02.mp3",
+            "audio/General/auv1n-zt6n9_01.mp3",
+            "audio/General/auv1n-zt6n9_04.mp3",
+            "audio/General/auv1n-zt6n9_05.mp3",
+            "audio/General/auv1n-zt6n9_06.mp3"
         ],
         texts: {
             "page-title": "クレーだだだ～",
@@ -172,12 +168,12 @@ const LANGUAGES = {
             "audio/JP_voice/Wunia_JP.mp3",
             "audio/JP_voice/ChildlabourWuuu_JP.mp3",
             //8-13：彩蛋模式 mode3
-            "audio/General/Egg_LZKBomb_General.mp3",
-            "audio/General/Egg_LZKDadada_General .mp3",
-            "audio/General/Egg_LZKHei_General.mp3",
-            "audio/General/Egg_HLbomb_General.mp3",
-            "audio/General/Egg_HLlalala_General.mp3",
-            "audio/General/Egg_HLdadada_General.mp3"
+            "audio/General/auv1n-zt6n9_03.mp3",
+            "audio/General/auv1n-zt6n9_02.mp3",
+            "audio/General/auv1n-zt6n9_01.mp3",
+            "audio/General/auv1n-zt6n9_04.mp3",
+            "audio/General/auv1n-zt6n9_05.mp3",
+            "audio/General/auv1n-zt6n9_06.mp3"
         ],
         texts: {
             "page-title": "Welcome to Klee dadada~ &nbsp;",
@@ -224,8 +220,8 @@ function refreshModeSelector(selectedLanguage){
     switch (selectedLanguage) {
         case "cn":
             document.getElementById("mode1").innerHTML = "默认模式";
-            document.getElementById("mode2").innerHTML = "只要哒哒哒";
-            document.getElementById("mode3").innerHTML = "隐藏彩蛋";
+            document.getElementById("mode2").innerHTML = "只要猫猫盒";
+            document.getElementById("mode3").innerHTML = "只要猫猫盒";
             break;
         case "ja":
             document.getElementById("mode1").innerHTML = "デフォルトモード";
@@ -454,7 +450,7 @@ function playDadada() {
         case "mode3":{
             if(isFirstVoice == true){//随机获取一个音频的URL，第一个必定是哒哒哒
                 isFirstVoice = false;
-                audioUrl = getLocalAudioList()[1] //First play fixed Dadada
+                audioUrl = getLocalAudioList()[11] //First play fixed Dadada
             }else{
                 audioUrl = getRandomAudioUrl(curMode);
             }
